@@ -1,0 +1,36 @@
+{
+  "name": "koishi-plugin-hpoi",
+  "description": "返回hpoi手办维基索引",
+  "version": "1.0.3",
+  "contributors": [
+    "KIRA <914489374@qq.com>"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KIRA2ZERO/koishi-plugin-hpoi",
+  "repository": {
+    "type": "github",
+    "url": "git+https://github.com/KIRA2ZERO/koishi-plugin-hpoi.git"
+  },
+  "scripts": {},
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "hpoi"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.11.2"
+  },
+  "devDependencies": {
+    "koishi": "^4.11.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
