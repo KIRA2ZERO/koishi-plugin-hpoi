@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-hpoi",
   "description": "返回hpoi手办维基索引",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "contributors": [
     "KIRA <914489374@qq.com>"
   ],
