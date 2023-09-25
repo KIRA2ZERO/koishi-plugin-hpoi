@@ -58,7 +58,7 @@ export function apply(ctx: Context) {
     hpoi.update()
   })
 
-  ctx.command('hpoi.clear 清空hpoi_table表中的数据')
+  ctx.command('hpoi.clear 清空hpoi_table表中的数据',{authority:5})
   .action(({session}) => {
     const hpoi = new Hpoi(ctx,session)
     hpoi.clear()
