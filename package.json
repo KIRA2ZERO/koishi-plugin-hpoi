@@ -1,20 +1,18 @@
 {
   "name": "koishi-plugin-hpoi",
-  "description": "返回hpoi手办维基索引",
-  "version": "1.0.4",
-  "contributors": [
-    "KIRA <914489374@qq.com>"
-  ],
+  "description": "hpoi手办维基",
+  "version": "1.0.5",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "author": "KIRA2ZERO <914489374@qq.com>",
   "license": "MIT",
   "homepage": "https://github.com/KIRA2ZERO/koishi-plugin-hpoi",
   "repository": {
-    "type": "github",
+    "type": "git",
     "url": "git+https://github.com/KIRA2ZERO/koishi-plugin-hpoi.git"
   },
   "scripts": {},
@@ -25,12 +23,32 @@
     "hpoi"
   ],
   "peerDependencies": {
-    "koishi": "^4.11.2"
+    "koishi": "^4.14.4",
+    "koishi-plugin-puppeteer": "^3.5.0"
   },
   "devDependencies": {
-    "koishi": "^4.11.2"
+    "cheerio": "^1.0.0-rc.12",
+    "@types/node": "^18.15.3",
+    "atsc": "^1.2.2",
+    "koishi": "^4.14.4",
+    "koishi-plugin-puppeteer": "^3.5.0",
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12"
+  },
+  "koishi": {
+    "description": {
+      "zh": "hpoi手办维基"
+    },
+    "service": {
+      "required": [
+        "database",
+        "puppeteer"
+      ]
+    },
+    "locales": [
+      "zh"
+    ]
   }
 }
