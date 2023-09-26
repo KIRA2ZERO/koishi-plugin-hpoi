@@ -104,7 +104,7 @@ export class Hpoi{
         await sleep(3000)
       }
     }
-    // pageMain.close()
+    await pageMain.close()
     // 将推送的id保存至本地库中
     await this.ctx.database.set("hpoi_table",{},{id:[...local_id_list, ...new_id_list]});
 
